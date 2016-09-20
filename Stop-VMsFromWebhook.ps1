@@ -28,7 +28,7 @@ workflow Stop-VMsFromWebhook
         foreach ($VM in $VMList)
         {
             Write-Output "Starting $VM.Name."
-            Stop-AzureVM -Name $VM.Name -ServiceName $VM.ServiceName
+            Start-AzureVM -Name $VM.Name -ServiceName $VM.ServiceName
         }
     }
     else {
