@@ -39,7 +39,7 @@ workflow Invoke-RunbookUsingAlerts
         # Authenticate to your Azure subscription using Organization ID to be able to restart that Virtual Machine. 
         $cred = Get-AutomationPSCredential -Name "ContosoAccount" 
         Add-AzureAccount -Credential $cred 
-        Select-AzureSubscription -subscriptionName "azure Pass" 
+        Select-AzureSubscription -subscriptionName "Azure Pass" 
  
         #Check the status property of the VM
         Write-Output "Status of VM before taking action"
